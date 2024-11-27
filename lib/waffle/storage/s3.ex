@@ -130,6 +130,7 @@ defmodule Waffle.Storage.S3 do
   """
   require Logger
 
+  @behaviour Waffle.StorageBehavior
   alias ExAws.Request.Url
   alias ExAws.S3
   alias ExAws.S3.Upload
